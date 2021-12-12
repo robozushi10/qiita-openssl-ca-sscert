@@ -1,0 +1,13 @@
+version: "3"
+services:
+  openssl:
+    container_name: myalpineopenssl
+    build: assets/openssl
+    user: root
+    image: alpine/openssl
+    volumes:
+      - ./PV/etc/ssl:/etc/ssl
+      - ./PV/var/ssl/ca:/var/ssl/ca
+    tty:
+      true
+

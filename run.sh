@@ -1,6 +1,5 @@
 #!/bin/bash
  
-# https://luna2-linux.blogspot.com/2011/02/getopt.html
 echo "[DEBUG]: ARGUMENTS => <$@>"
 GETOPT=`getopt -q -o a -l ip:,dns: -- "$@"` ; [ $? != 0 ] && exit 49
 eval set -- "$GETOPT"
