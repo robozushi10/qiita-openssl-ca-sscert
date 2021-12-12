@@ -63,7 +63,7 @@ $ tree . --charset=C  -I '__pycache__|*.ORIG|セットアップ*' --dirsfirst
 |               |-- certs .......... CA証明書 (=サーバ証明書) の出力先である
 |               |-- private ........ CA秘密鍵 (=サーバ秘密鍵) の出力先である
 |               |-- index.txt
-|               `-- srial .......... 値「01」である
+|               `-- serial ......... 値「01」である
 |-- assets
 |   `-- openssl
 |       |-- Dockerfile ............. run.sh により生成された do_gen_cacert.sh をコンテナ内の /root/. に配置するだけ.
