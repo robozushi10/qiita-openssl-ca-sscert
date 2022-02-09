@@ -225,7 +225,7 @@ basicConstraints = CA:FALSE
 keyUsage = nonRepudiation, digitalSignature, keyEncipherment
 
 [ v3_ca ]
-subjectAltName = {{MY_DEF_TYPE}}:{{MY_MACHINE_NAME}}
+subjectAltName = DNS:{{MY_MACHINE_NAME}}, IP:{{MY_MACHINE_IP}}
 
 # Extensions for a typical CA
 

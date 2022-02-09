@@ -3,21 +3,15 @@
 ### 形式
 
 ```bash
-$ bash run.sh --dns <マシン名>
-$ bash run.sh --dns <IP>
+$ bash run.sh <IP> <マシン名>
 ```
 
 　
 
 ### 実行例
 
-ホスト名を使う場合は `--dns` を使って指定する.
-
-IP名を使う場合は `--ip` を使って指定する.
-
 ```bash
-$ bash run.sh --dns my_server
-$ bash run.sh --ip 192.168.1.10
+$ bash run.sh 192.168.1.10 my_server
 ```
 
 　
@@ -81,16 +75,5 @@ $ tree . --charset=C  -I '__pycache__|*.ORIG|セットアップ*' --dirsfirst
 
 ```bash
 $ openssl x509 -in PV/var/ssl/ca/certs/ca.cert -text
-```
-
-### ホスト名 と IP を指定した場合での変化点
-
-`./PV/etc/ssl/openssl.cnf` が次のように異なる.
-
-```
-subjectAltName = DNS:my_server
-```
-```
-subjectAltName = IP:192.168.1.100
 ```
 
